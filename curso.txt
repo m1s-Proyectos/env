@@ -1,0 +1,60 @@
+https://youtu.be/mQ0IUy_18mI?list=PLFRKQL-FSrHJuoNJdVd554Hg9awJw9w9P
+server:admin
+pass:admin123
+
+
+ 
+
+seguimiento para crear un entorno virtual nuevo y un proyecto de una forma fácil y rápida:  
+$ git remote add https://github.com/m1s-Proyectos/env.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Francisco Martinez@Frank-Martinez MINGW64 ~/Desktop/prueba/proyecto (master)
+$ git remote add -m https://github.com/m1s-Proyectos/env.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Francisco Martinez@Frank-Martinez MINGW64 ~/Desktop/prueba/proyecto (master)
+$ git remote add master https://github.com/m1s-Proyectos/env.git
+
+Francisco Martinez@Frank-Martinez MINGW64 ~/Desktop/prueba/proyecto (master)
+$ git branch
+* master
+
+Francisco Martinez@Frank-Martinez MINGW64 ~/Desktop/prueba/proyecto (master)
+$ git push -u master
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream master master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Francisco Martinez@Frank-Martinez MINGW64 ~/Desktop/prueba/proyecto (master)
+$ git push --set-upstream master master
+
+
+
