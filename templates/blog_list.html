@@ -1,0 +1,11 @@
+Blog list
+<br>
+<br>
+
+{% for post in posts %}
+<a href="{% url 'blog:detail' post.id %}">{{ post.title }}</a> <!-- 🔹 Corregido "tittle" a "title" -->
+{% endfor %}
+<br>
+<a href="{% url 'blog:create' %}">Crear nuevo</a>  <!-- 🔹 Mantiene la estructura correcta del enlace -->
+
+<p>Hola, este es mi sitio</p>  <!-- 🔹 Se agrega la estructura correcta del texto final -->
